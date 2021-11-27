@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   border: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
-}
 
-*:focus {
-  outline: 0;
+  &:focus {
+    outline: 0;
+  }
 }
 
 .btn-dark {
@@ -22,30 +22,24 @@
   width: 138px;
   border-radius: 8px;
   background: #204080;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(#000, 0.25);
   color: #fff;
   cursor: url("./img/cursor-item.png"), auto;
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.25);
+    background: #4f75c2;
+  }
 }
-
-.btn-dark:hover {
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: #4f75c2;
-}
-
 .btn-ligth {
   height: 46px;
   width: 138px;
   border-radius: 8px;
   background: #4f75c2;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(#000, 0.25);
   color: #fff;
   cursor: url("./img/cursor-item.png"), auto;
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.25);
+    background: #204080;
+  }
 }
-
-.btn-ligth:hover {
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: #204080;
-}
-/*# sourceMappingURL=index.css.map */

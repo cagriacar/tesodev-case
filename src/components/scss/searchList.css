@@ -1,0 +1,233 @@
+.component--search-list {
+  width: 670px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 27px;
+}
+
+.component--search-list .header img {
+  max-width: 149px;
+  position: absolute;
+  top: 0;
+  left: -150px;
+  margin-left: -35px;
+}
+
+.component--search-list .header .search--input {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 525px 1fr;
+      grid-template-columns: 525px 1fr;
+  margin-bottom: 100px;
+}
+
+.component--search-list .header .search--input input {
+  height: 46px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+.component--search-list .header .search--input input::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.component--search-list .header .search--input input:-ms-input-placeholder {
+  color: #888888;
+}
+
+.component--search-list .header .search--input input::-ms-input-placeholder {
+  color: #888888;
+}
+
+.component--search-list .header .search--input input::placeholder {
+  color: #888888;
+}
+
+.component--search-list .content .search--list {
+  position: relative;
+  width: 644px;
+}
+
+.component--search-list .content .search--list .order-by {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.component--search-list .content .search--list .order-by .sort-list {
+  visibility: hidden;
+  position: relative;
+  left: 50px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.component--search-list .content .search--list .order-by .sort-list ul {
+  margin: 0;
+}
+
+.component--search-list .content .search--list .order-by .sort-list ul li {
+  padding: 4px 8px;
+  margin: 0;
+  background: transparent;
+}
+
+.component--search-list .content .search--list .order-by .sort-list ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  padding: 6px 9px;
+}
+
+.component--search-list .content .search--list .order-by .sort-list ul li a:hover {
+  background: #c4c4c4;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.component--search-list .content .search--list .order-by .sort-list ul li .active {
+  background: #c4c4c4;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.component--search-list .content .search--list .order-by:hover {
+  color: #8b8b8b;
+}
+
+.component--search-list .content .search--list .order-by:hover .sort-list {
+  visibility: visible;
+}
+
+.component--search-list .content .search--list ul {
+  margin-bottom: 60px;
+}
+
+.component--search-list .content .search--list ul li {
+  padding: 10px 9px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  cursor: url("../../img/cursor-item.png"), auto;
+}
+
+.component--search-list .content .search--list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: url("../../img/cursor-item.png"), auto;
+  color: #484848;
+}
+
+.component--search-list .content .search--list ul li a .result {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px 1fr)[2];
+      grid-template-columns: repeat(2, 300px 1fr);
+  overflow: hidden;
+}
+
+.component--search-list .content .search--list ul li a .result .info {
+  padding-right: 160px;
+}
+
+.component--search-list .content .search--list ul li a .title {
+  font-size: 12px;
+  margin-top: 7px;
+  color: #686868;
+}
+
+.component--search-list .content .search--list ul li:hover {
+  background: #c4c4c4;
+}
+
+.component--search-list .content .search--list ul li:hover .title {
+  color: #fff;
+}
+
+.component--search-list .page-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+}
+
+.component--search-list .page-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--search-list .page-navigation ul li {
+  margin-right: 10px;
+}
+
+.component--search-list .page-navigation ul li .previous {
+  padding: 4px 15px !important;
+}
+
+.component--search-list .page-navigation ul li .number {
+  height: 25px;
+  text-align: center;
+  border: 1px solid #484848;
+  font-size: 14px;
+  font-weight: bold;
+  color: #484848;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 10px;
+}
+
+.component--search-list .page-navigation ul li .number:last-child {
+  margin-right: 0px;
+}
+
+.component--search-list .page-navigation ul li .number:hover {
+  cursor: url("../../img/cursor-item.png"), auto;
+  background: #ddd;
+}
+
+.component--search-list .page-navigation ul li .point {
+  color: #000;
+  border: none;
+  padding: 4px 0px;
+}
+
+.component--search-list .page-navigation ul li .point:hover {
+  cursor: none !important;
+  background: transparent !important;
+  color: #000 !important;
+}
+
+.component--search-list .page-navigation ul li .next {
+  padding: 5px 27px !important;
+}
+
+.component--search-list .page-navigation ul li .active {
+  background: #204080;
+  color: #fff;
+}
+/*# sourceMappingURL=searchList.css.map */

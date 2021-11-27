@@ -1,0 +1,128 @@
+.component--landingPage {
+  width: 863px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--landingPage .header h6 {
+  font-size: 14px;
+  color: #484848;
+  text-align: right;
+  margin-top: 10px;
+  position: relative;
+  left: 35px;
+}
+
+.component--landingPage .content {
+  width: 100%;
+}
+
+.component--landingPage .content .search-input {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--landingPage .content .search-input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 46px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+.component--landingPage .content .search-input input::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.component--landingPage .content .search-input input:-ms-input-placeholder {
+  color: #888888;
+}
+
+.component--landingPage .content .search-input input::-ms-input-placeholder {
+  color: #888888;
+}
+
+.component--landingPage .content .search-input input::placeholder {
+  color: #888888;
+}
+
+.component--landingPage .content .search-results {
+  width: 709px;
+  margin-top: 18px;
+  border-radius: 4px;
+  border: 1px solid #484848;
+  padding: 18px 30px;
+}
+
+.component--landingPage .content .search-results ul {
+  margin-bottom: 40px;
+}
+
+.component--landingPage .content .search-results ul li {
+  margin-bottom: 18px;
+}
+
+.component--landingPage .content .search-results ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #484848;
+  cursor: url("../../img/cursor-item.png"), auto;
+}
+
+.component--landingPage .content .search-results ul li a .result {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px 1fr)[2];
+      grid-template-columns: repeat(2, 400px 1fr);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.component--landingPage .content .search-results ul li a .title {
+  font-size: 12px;
+  margin-top: 7px;
+  color: #686868;
+}
+
+.component--landingPage .content .search-results ul li a .line {
+  margin-top: 5px;
+  color: #686868;
+}
+
+.component--landingPage .content .search-results .show-more {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  cursor: url("../../img/cursor-item.png"), auto;
+}
+/*# sourceMappingURL=landingPage.css.map */
